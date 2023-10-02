@@ -1,0 +1,17 @@
+.subheaders {
+    font-size: 30px;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.questions {
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.answers {
+    font-size: 15px;
+    font-family: arial;
+}
