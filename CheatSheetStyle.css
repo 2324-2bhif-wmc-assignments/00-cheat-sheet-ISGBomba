@@ -1,0 +1,41 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(156, 152, 152);
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+.finePrint {
+    font-size: 14px;
+    text-align: center;
+}
+
+.subheaders {
+    font-size: 30px;
+    text-align: center;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.questions {
+    font-size: 20px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.answers {
+    font-size: 15px;
+    font-family: arial;
+}
+
+.ToCHeaders {
+    font-size: 20px;
+}
+

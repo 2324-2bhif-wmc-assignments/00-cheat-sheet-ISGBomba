@@ -6,30 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cheatsheet</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="CheatSheetStyle.css">
 </head>
 
 <body>
-    <h1>WMC Cheat Sheet (by Jacob Mayrwoeger)</h1>
+    <h1>WMC Cheat Sheet</h1>
+    <p class="finePrint">Designed and created by Jacob Mayrwoeger</p>
     <h2>Table of Contents</h2>
     <nav>
-        <li><a href="#WWWSuccessQuestion">What are the most essential technologies that made the World Wide Web such a
-                success?</a></li>
-        <li><a href="#ResourceAddressQuestion">How are resources (html pages, images, etc) addressed in the web?</a>
-        </li>
-        <li><a href="#GeneralCompURLQuestion">What are the general components of a url?</a></li>
-        <li><a href="#WebserverQuestion">What is a web server?</a></li>
-        <li><a href="#WebserverDoQuestion">What does a web server?</a></li>
-        <li><a href="#ContentStoredQuestion">How can content be stored on a web server?</a></li>
-        <li><a href="#ContentDescribedQuestion">How is content in webpages described?</a></li>
-        <li><a href="#WebClientQuestion">What is a web client?</a></li>
-        <li><a href="#WebClientDoesQuestion">What does a web client?</a></li>
-        <li><a href="#WebClientAndBrowserDifferents">Web Client and Web Browser is the same</a></li>
-        <li><a href="#HTMLTagQuestion">What is the html head element?</a></li>
-        <li><a href="#DoctypeQuestion">What does &lt;!DOCTYPE` html&gt; mean?</a></li>
-        <li><a href="#TopMostElements">What are the two top most elements within the html element?</a></li>
-        <li><a href="#EmphasizeQuestion">How to emphasize a text and how is it displayed in the browser?</a></li>
-        <li><a href="#MarkQuestion">How to mark up important ext and how is it displayed in the browser?</a></li>
+        <ul>
+            <span class="ToCHeaders">World Wide Web General</span>
+            <li><a href="#WWWSuccessQuestion">What are the most essential technologies that made the World Wide Web such
+                    a
+                    success?</a></li>
+            <li><a href="#ResourceAddressQuestion">How are resources (html pages, images, etc) addressed in the web?</a>
+            </li>
+            <li><a href="#GeneralCompURLQuestion">What are the general components of a url?</a></li>
+            <span class="ToCHeaders">Web Server</span>
+            <li><a href="#WebserverQuestion">What is a web server?</a></li>
+            <li><a href="#WebserverDoQuestion">What does a web server?</a></li>
+            <li><a href="#ContentStoredQuestion">How can content be stored on a web server?</a></li>
+            <li><a href="#ContentDescribedQuestion">How is content in webpages described?</a></li>
+            <span class="ToCHeaders">Web Client</span>
+            <li><a href="#WebClientQuestion">What is a web client?</a></li>
+            <li><a href="#WebClientDoesQuestion">What does a web client?</a></li>
+            <li><a href="#WebClientAndBrowserDifferents">Web Client and Web Browser is the same</a></li>
+            <span class="ToCHeaders">Hello World</span>
+            <li><a href="#HTMLTagQuestion">What is the html head element?</a></li>
+            <li><a href="#DoctypeQuestion">What does &lt;!DOCTYPE` html&gt; mean?</a></li>
+            <li><a href="#TopMostElements">What are the two top most elements within the html element?</a></li>
+            <li><a href="#EmphasizeQuestion">How to emphasize a text and how is it displayed in the browser?</a></li>
+            <li><a href="#MarkQuestion">How to mark up important ext and how is it displayed in the browser?</a></li>
+        </ul>
     </nav>
     <p class="subheaders">Word Wide Web General</p>
     <section id="WWWSuccessQuestion" class="answers">
@@ -49,173 +57,203 @@
     </section>
     <section id="ResourceAddressQuestion" class="answers">
         <p class="questions">How are resources (html pages, images, etc) addressed in the web?</p>
-        <li>Scheme: The scheme or protocol specifies how the resource should be accessed. Common
-            schemes include: http(s), ftp, mailto, file.</li>
-        <li>Domain Name or IP Address: This part of the URL identifies the server where the resource is hosted.</li>
-        <li>Port: The port number, if specified, indicates the specific network port on the server
-            to use when accessing the resource.</li>
-        <li>Path: The path specifies the directory or location on the server where the resource is stored. </li>
-        <li>Query String: A query string, if present, contains additional parameters or data that
-            can be sent to the server. </li>
-        <li>Fragment Identifier: The fragment identifier, often preceded by a "#" symbol,
-            identifies a specific section or anchor within a web page.</li>
+        <ul>
+            <li>Scheme: The scheme or protocol specifies how the resource should be accessed. Common
+                schemes include: http(s), ftp, mailto, file.</li>
+            <li>Domain Name or IP Address: This part of the URL identifies the server where the resource is hosted.</li>
+            <li>Port: The port number, if specified, indicates the specific network port on the server
+                to use when accessing the resource.</li>
+            <li>Path: The path specifies the directory or location on the server where the resource is stored. </li>
+            <li>Query String: A query string, if present, contains additional parameters or data that
+                can be sent to the server. </li>
+            <li>Fragment Identifier: The fragment identifier, often preceded by a "#" symbol,
+                identifies a specific section or anchor within a web page.</li>
+        </ul>
     </section>
     <section id="GeneralCompURLQuestion" class="answers">
         <p class="questions">What are the general components of a url?</p>
-        <li>Scheme (or Protocol): http(s), ftp, mailto, file, tel, data</li>
-        <li>Authority: The authority component typically includes the domain name
-            (or IP address) and an optional port number, separated by "@" or ":"
-            characters, respectively</li>
-        <li>Domain (or Host): The domain or host component identifies the server where the resource is hosted.</li>
-        <li>Port: The port component, if present, specifies the network port to be used when connecting to the server.
-        </li>
-        <li>Path: The path component specifies the location of the resource on the server's file
-            system or within its directory structure.</li>
-        <li>Query: The query component, if present, is used to pass additional parameters or data
-            to the server. It typically starts with a "?" character and consists of key-value pairs
-            separated by "&" symbols.</li>
-        <li>Fragment Identifier: The fragment identifier, often preceded by a "#" character, identifies
-            a specific section or anchor within a web page</li>
+        <ul>
+            <li>Scheme (or Protocol): http(s), ftp, mailto, file, tel, data</li>
+            <li>Authority: The authority component typically includes the domain name
+                (or IP address) and an optional port number, separated by "@" or ":"
+                characters, respectively</li>
+            <li>Domain (or Host): The domain or host component identifies the server where the resource is hosted.</li>
+            <li>Port: The port component, if present, specifies the network port to be used when connecting to the
+                server.
+            </li>
+            <li>Path: The path component specifies the location of the resource on the server's file
+                system or within its directory structure.</li>
+            <li>Query: The query component, if present, is used to pass additional parameters or data
+                to the server. It typically starts with a "?" character and consists of key-value pairs
+                separated by "&" symbols.</li>
+            <li>Fragment Identifier: The fragment identifier, often preceded by a "#" character, identifies
+                a specific section or anchor within a web page</li>
+        </ul>
     </section>
     <p class="subheaders">Web Server</p>
     <section id="WebserverQuestion" class="answers">
         <p class="questions">What is a web server?</p>
-        A web server is a software application or hardware device that serves as the foundation for the
-        World Wide Web (WWW) by responding to requests from clients, typically web browsers, and delivering web content
-        to those clients over the internet. In simpler terms, it's a specialized computer program or hardware system
-        that
-        stores, processes, and serves web pages, files, and other resources to users when they access websites.
-        Characteristic examples:
-        <li>Handling Client Requests</li>
-        <li>Content Storage</li>
-        <li>Content Processing</li>
-        <li>HTTP(S) Communication</li>
-        <li>Port and IP Address</li>
+        <ul>
+            A web server is a software application or hardware device that serves as the foundation for the
+            World Wide Web (WWW) by responding to requests from clients, typically web browsers, and delivering web
+            content
+            to those clients over the internet. In simpler terms, it's a specialized computer program or hardware system
+            that
+            stores, processes, and serves web pages, files, and other resources to users when they access websites.
+            Characteristic examples:
+            <li>Handling Client Requests</li>
+            <li>Content Storage</li>
+            <li>Content Processing</li>
+            <li>HTTP(S) Communication</li>
+            <li>Port and IP Address</li>
+        </ul>
     </section>
     <section id="WebserverDoQuestion" class="answers">
         <p class="questions">What does a web server?</p>
         A web server performs several critical functions to facilitate the delivery of web content
         and services to clients (typically web browsers) over the internet. <br />
         Examples:
-        <li>Listens for Incoming Requests: A web server constantly listens for incoming HTTP (Hypertext Transfer
-            Protocol)
-            or HTTPS (HTTP Secure) requests from clients.</li>
-        <li>Processes Client Requests: When a request is received, the web server processes it
-            based on the URL and requested resource.</li>
-        <li>Retrieves Web Content: For static resources like HTML files, images, stylesheets, and JavaScript files,
-            the web server retrieves these files from its storage or file system and sends them back to the client.</li>
-        <li>Dynamic Content Generation: Web servers can execute server-side scripts written in programming languages
-            like PHP, Python, Ruby, or Node.js</li>
-        <li>HTTP(S) Communication: Web servers communicate with clients using the HTTP or HTTPS protocols.</li>
-        <li>Handling Authentication and Sessions: Web servers can implement user authentication mechanisms
-            to secure access to certain resources.</li>
-        <li>Content Compression and Caching: To optimize performance, web servers can compress content before
-            sending it to clients, reducing bandwidth usage</li>
-        <li>Virtual Hosting: Web servers support virtual hosting, allowing multiple websites to share the same
-            server while appearing as separate entities.</li>
-        <li>Load Balancing: In high-traffic scenarios or for redundancy, web servers can work
-            together in a cluster or farm.</li>
-        <li>Logging and Monitoring: Web servers often log information about each request and server activity.</li>
-        <li>Security: Web servers implement various security measures to protect against common threats like
-            DDoS attacks, injection attacks, and unauthorized access.</li>
+        <ul>
+            <li>Listens for Incoming Requests: A web server constantly listens for incoming HTTP (Hypertext Transfer
+                Protocol)
+                or HTTPS (HTTP Secure) requests from clients.</li>
+            <li>Processes Client Requests: When a request is received, the web server processes it
+                based on the URL and requested resource.</li>
+            <li>Retrieves Web Content: For static resources like HTML files, images, stylesheets, and JavaScript files,
+                the web server retrieves these files from its storage or file system and sends them back to the client.
+            </li>
+            <li>Dynamic Content Generation: Web servers can execute server-side scripts written in programming languages
+                like PHP, Python, Ruby, or Node.js</li>
+            <li>HTTP(S) Communication: Web servers communicate with clients using the HTTP or HTTPS protocols.</li>
+            <li>Handling Authentication and Sessions: Web servers can implement user authentication mechanisms
+                to secure access to certain resources.</li>
+            <li>Content Compression and Caching: To optimize performance, web servers can compress content before
+                sending it to clients, reducing bandwidth usage</li>
+            <li>Virtual Hosting: Web servers support virtual hosting, allowing multiple websites to share the same
+                server while appearing as separate entities.</li>
+            <li>Load Balancing: In high-traffic scenarios or for redundancy, web servers can work
+                together in a cluster or farm.</li>
+            <li>Logging and Monitoring: Web servers often log information about each request and server activity.</li>
+            <li>Security: Web servers implement various security measures to protect against common threats like
+                DDoS attacks, injection attacks, and unauthorized access.</li>
+        </ul>
     </section>
     <section id="ContentStoredQuestion" class="answers">
         <p class="questions">How can content be stored on a web server?</p>
-        Content is stored on a web server in the form of files and directories within the server's file system.
-        The organization and management of content on a web server are critical for efficient web hosting. <br />
-        Here's how content can be stored on a web server:
-        <li>File System Structure: Web servers typically have a directory structure where content is stored.</li>
-        <li>Static Files: Static web content, such as HTML files, images, stylesheets (CSS), JavaScript files,
-            and downloadable documents (PDFs, text files), is stored directly in the appropriate directory within
-            the server's file system. </li>
-        <li>Dynamic Content: Dynamic content, which is generated on-the-fly in response to user requests,
-            is often stored in a database or generated by server-side scripts.</li>
-        <li>Content Management Systems (CMS): Many websites use Content Management Systems like WordPress,
-            Drupal, or Joomla.</li>
-        <li>Media Files: For multimedia content like videos and audio files, web servers store these files in
-            directories,
-            often with subdirectories for different types of media.</li>
-        <li>User Uploads: Websites that allow user-generated content often have directories to store user uploads,
-            such as profile pictures, user-submitted images, and documents.</li>
-        <li>Caching: Some web servers implement caching mechanisms to store frequently accessed content in a cache.</li>
-        <li>Content Versioning: Web developers may use version control systems like Git to store and manage
-            website source code, including HTML, CSS, and JavaScript files.</li>
-        <li>Backup and Redundancy: To ensure data integrity and availability, web server administrators
-            often perform regular backups of web content.</li>
-        <li>Content Security: Proper access control measures are essential to protect content on a web server.</li>
+        <ul>
+            Content is stored on a web server in the form of files and directories within the server's file system.
+            The organization and management of content on a web server are critical for efficient web hosting. <br />
+            Here's how content can be stored on a web server:
+            <li>File System Structure: Web servers typically have a directory structure where content is stored.</li>
+            <li>Static Files: Static web content, such as HTML files, images, stylesheets (CSS), JavaScript files,
+                and downloadable documents (PDFs, text files), is stored directly in the appropriate directory within
+                the server's file system. </li>
+            <li>Dynamic Content: Dynamic content, which is generated on-the-fly in response to user requests,
+                is often stored in a database or generated by server-side scripts.</li>
+            <li>Content Management Systems (CMS): Many websites use Content Management Systems like WordPress,
+                Drupal, or Joomla.</li>
+            <li>Media Files: For multimedia content like videos and audio files, web servers store these files in
+                directories,
+                often with subdirectories for different types of media.</li>
+            <li>User Uploads: Websites that allow user-generated content often have directories to store user uploads,
+                such as profile pictures, user-submitted images, and documents.</li>
+            <li>Caching: Some web servers implement caching mechanisms to store frequently accessed content in a cache.
+            </li>
+            <li>Content Versioning: Web developers may use version control systems like Git to store and manage
+                website source code, including HTML, CSS, and JavaScript files.</li>
+            <li>Backup and Redundancy: To ensure data integrity and availability, web server administrators
+                often perform regular backups of web content.</li>
+            <li>Content Security: Proper access control measures are essential to protect content on a web server.</li>
+        </ul>
     </section>
     <section id="ContentDescribedQuestion" class="answers">
         <p class="questions">How is content in webpages described?</p>
-        Content in webpages is described using a combination of technologies and standards that define the structure,
-        presentation, and functionality of the content. <br />
-        The primary technologies and methods used to describe content in webpages include:
-        <li>Hypertext Markup Language (HTML): HTML is the core language used to describe the structure and content of
-            webpages.</li>
-        <li>Cascading Style Sheets (CSS): CSS is used to describe the presentation and styling of HTML elements.</li>
-        <li>JavaScript: JavaScript is a scripting language that adds interactivity and dynamic behavior to webpages.
-        </li>
-        <li>Meta Data: Metadata is used to provide additional information about a webpage.</li>
-        <li>Structured Data: Structured data formats like JSON-LD (JavaScript Object Notation for Linked Data) or
-            Microdata
-            are used to mark up specific pieces of content with semantic meaning.</li>
-        <li>Accessibility Markup: Web developers use HTML elements and attributes to enhance web accessibility.</li>
-        <li>Web Components: Web components are a set of web platform APIs that allow developers to create reusable
-            custom HTML
-            elements with encapsulated functionality and styling. </li>
+        <ul>
+            Content in webpages is described using a combination of technologies and standards that define the
+            structure,
+            presentation, and functionality of the content. <br />
+            The primary technologies and methods used to describe content in webpages include:
+            <li>Hypertext Markup Language (HTML): HTML is the core language used to describe the structure and content
+                of
+                webpages.</li>
+            <li>Cascading Style Sheets (CSS): CSS is used to describe the presentation and styling of HTML elements.
+            </li>
+            <li>JavaScript: JavaScript is a scripting language that adds interactivity and dynamic behavior to webpages.
+            </li>
+            <li>Meta Data: Metadata is used to provide additional information about a webpage.</li>
+            <li>Structured Data: Structured data formats like JSON-LD (JavaScript Object Notation for Linked Data) or
+                Microdata
+                are used to mark up specific pieces of content with semantic meaning.</li>
+            <li>Accessibility Markup: Web developers use HTML elements and attributes to enhance web accessibility.</li>
+            <li>Web Components: Web components are a set of web platform APIs that allow developers to create reusable
+                custom HTML
+                elements with encapsulated functionality and styling. </li>
+        </ul>
     </section>
     <p class="subheaders">Web Client</p>
     <section id="WebClientQuestion" class="answers">
         <p class="questions">What is a web client?</p>
-        A web client, often simply referred to as a "client," is a software application or user agent that interacts
-        with web servers over the internet. Web clients are responsible for making requests to web servers and receiving
-        and rendering the content returned by those servers. They play a central role in the World Wide Web ecosystem by
-        allowing users to access and interact with web content and services.
-        Here are some key characteristics and examples of web clients:
-        <li>User Interface: Web clients typically have a user interface (UI) that allows users to input web addresses
-            (URLs),
-            interact with web content, and navigate websites. </li>
-        <li>Requesting Web Content: When a user enters a URL or clicks on a hyperlink, the web client sends a request to
-            the appropriate web server to retrieve the requested web content.</li>
-        <li>Rendering Web Content: Once the web client receives the content from the server, it renders the
-            content for display to the user.</li>
-        <li>Interactivity: Web clients enable users to interact with web content, such as submitting forms,
-            clicking on links, playing videos, and performing various actions on web applications. </li>
+        <ul>
+            A web client, often simply referred to as a "client," is a software application or user agent that interacts
+            with web servers over the internet. Web clients are responsible for making requests to web servers and
+            receiving
+            and rendering the content returned by those servers. They play a central role in the World Wide Web
+            ecosystem by
+            allowing users to access and interact with web content and services.
+            Here are some key characteristics and examples of web clients:
+            <li>User Interface: Web clients typically have a user interface (UI) that allows users to input web
+                addresses
+                (URLs),
+                interact with web content, and navigate websites. </li>
+            <li>Requesting Web Content: When a user enters a URL or clicks on a hyperlink, the web client sends a
+                request to
+                the appropriate web server to retrieve the requested web content.</li>
+            <li>Rendering Web Content: Once the web client receives the content from the server, it renders the
+                content for display to the user.</li>
+            <li>Interactivity: Web clients enable users to interact with web content, such as submitting forms,
+                clicking on links, playing videos, and performing various actions on web applications. </li>
+        </ul>
     </section>
     <section id="WebClientDoesQuestion" class="answers">
         <p class="questions">What does a web client?</p>
-        A web client, often referred to simply as a "client," is a software application or user agent
-        that interacts with web servers over the internet. Its primary function is to request and receive
-        web content and services from web servers and render or display that content to the user. Web clients
-        are an integral part of the World Wide Web and enable users to access, view, and interact with web content.
-        Here's what a web client does:
-        <li>Initiates Requests: A web client initiates requests to web servers by sending HTTP
-            (Hypertext Transfer Protocol) or HTTPS (HTTP Secure) requests.</li>
-        <li>Handles Responses: When a web server receives a request, it processes it and sends back
-            a response to the web client.</li>
-        <li>Renders Content: The web client interprets and renders the received content for display to the user.</li>
-        <li>Provides User Interface: Most web clients have a graphical user interface (UI) that
-            allows users to interact with web content.</li>
-        <li>Manages User Input: Web clients handle user input, including keyboard and mouse interactions.</li>
-        <li>Supports Interactivity: Web clients enable interactivity on webpages and web applications
-            by executing JavaScript code.</li>
-        <li>Stores Data: Web clients can store temporary data, such as cookies, web storage, and caches,
-            to improve performance and maintain session information.</li>
-        <li>Manages Cookies and Sessions: Web clients send and receive cookies, which are small pieces
-            of data used for tracking user sessions and storing user-related information. </li>
-        <li>Ensures Security: Web clients implement security measures, such as supporting HTTPS to
-            encrypt data in transit, handling secure authentication and authorization, and protecting
-            against security threats like cross-site scripting (XSS) and cross-site request forgery (CSRF).</li>
-        <li>Supports Accessibility: Many web clients are designed to support web accessibility standards,
-            ensuring that web content is usable by individuals with disabilities.</li>
+        <ul>
+            A web client, often referred to simply as a "client," is a software application or user agent
+            that interacts with web servers over the internet. Its primary function is to request and receive
+            web content and services from web servers and render or display that content to the user. Web clients
+            are an integral part of the World Wide Web and enable users to access, view, and interact with web content.
+            Here's what a web client does:
+            <li>Initiates Requests: A web client initiates requests to web servers by sending HTTP
+                (Hypertext Transfer Protocol) or HTTPS (HTTP Secure) requests.</li>
+            <li>Handles Responses: When a web server receives a request, it processes it and sends back
+                a response to the web client.</li>
+            <li>Renders Content: The web client interprets and renders the received content for display to the user.
+            </li>
+            <li>Provides User Interface: Most web clients have a graphical user interface (UI) that
+                allows users to interact with web content.</li>
+            <li>Manages User Input: Web clients handle user input, including keyboard and mouse interactions.</li>
+            <li>Supports Interactivity: Web clients enable interactivity on webpages and web applications
+                by executing JavaScript code.</li>
+            <li>Stores Data: Web clients can store temporary data, such as cookies, web storage, and caches,
+                to improve performance and maintain session information.</li>
+            <li>Manages Cookies and Sessions: Web clients send and receive cookies, which are small pieces
+                of data used for tracking user sessions and storing user-related information. </li>
+            <li>Ensures Security: Web clients implement security measures, such as supporting HTTPS to
+                encrypt data in transit, handling secure authentication and authorization, and protecting
+                against security threats like cross-site scripting (XSS) and cross-site request forgery (CSRF).</li>
+            <li>Supports Accessibility: Many web clients are designed to support web accessibility standards,
+                ensuring that web content is usable by individuals with disabilities.</li>
+        </ul>
     </section>
     <section id="WebClientAndBrowserDifferents" class="answers">
         <p class="questions">Web Client and Web Browser is the same</p>
-        No, a web client and a web browser are not the same, although they are related
-        concepts in the context of web technology.
-        <li>Web Browser: A web browser is a software application that allows users
-            to access and view websites on the World Wide Web.</li>
-        <li>Web Client: A web client is a broader term that encompasses any software or device
-            that can make HTTP requests and retrieve web resources from web servers.</li>
+        <ul>
+            No, a web client and a web browser are not the same, although they are related
+            concepts in the context of web technology.
+            <li>Web Browser: A web browser is a software application that allows users
+                to access and view websites on the World Wide Web.</li>
+            <li>Web Client: A web client is a broader term that encompasses any software or device
+                that can make HTTP requests and retrieve web resources from web servers.</li>
+        </ul>
     </section>
     <p class="subheaders">Hello World</p>
     <section id="HTMLTagQuestion" class="answers">
@@ -234,17 +272,19 @@
     </section>
     <section id="TopMostElements" class="answers">
         <p class="questions">What are the two top most elements within the html element?</p>
-        <li> &lt;head&gt; Element: This element contains metadata about the document and other elements
-            that control how the document is processed or displayed.</li>
-        <li> &lt;body&gt; Element: This element contains the visible content of the web page, such as text,
-        images, links, forms, and other elements that users interact with.</li>
+        <ul>
+            <li> &lt;head&gt; Element: This element contains metadata about the document and other elements
+                that control how the document is processed or displayed.</li>
+            <li> &lt;body&gt; Element: This element contains the visible content of the web page, such as text,
+                images, links, forms, and other elements that users interact with.</li>
+        </ul>
     </section>
     <section id="EmphasizeQuestion">
         <p class="questions">How to emphasize a text and how is it displayed in the browser?</p>
         In HTML, you can emphasize or highlight text using the &lt;em&gt; element or the &lt;strong&gt; element,
         depending on the level of emphasis you want to apply. These elements are used to indicate
         semantic importance and provide a way for web browsers and assistive technologies to understand
-        the intended level of emphasis.<br/>
+        the intended level of emphasis.<br />
         In the browser, this would typically be displayed as: "This is <em>emphasized</em> text."
     </section>
     <section id="MarkQuestion" class="answers">
@@ -252,7 +292,7 @@
         In HTML, you can mark up important text using the &lt;mark&gt; element. The &lt;mark&gt; element is used to
         highlight or "mark" a portion of text as important or relevant within the context of the content.
         When used, browsers typically render the marked text with a yellow background by default,
-        but you can style it further using CSS if needed. <br/>
+        but you can style it further using CSS if needed. <br />
         In the browser, the text "important" would typically be displayed with a yellow background, like this:
 
         "This is some <mark>important</mark> text."
