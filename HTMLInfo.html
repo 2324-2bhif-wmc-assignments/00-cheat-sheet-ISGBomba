@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheatSheet</title>
+    <link rel="stylesheet" href="CheatSheetStyle.css">
+</head>
+<body>
+    <div class="ToCBox">
+        <a href="index.html">
+            <div class="ToCInsideBox boxText"> 
+                <br />
+                Hub 
+            </div>
+        </a>
+        <a href="cheatsheet.html">
+            <div class="ToCInsideBox boxText">
+                <br />
+                Basics
+            </div>
+        </a>
+        <a>
+            <div class="ToCInsideBox boxText">
+                <br />
+                HTML
+            </div>
+        </a>
+        <a href="CSSInfo.html">
+            <div class="ToCInsideBox boxText">
+                <br />
+                CSS
+            </div>
+        </a>
+    </div>
+    <h1>WMC Cheatsheet HTML</h1>
+    <p class="finePrint">Designed and created by Jacob Mayrwoeger</p>
+
+    <h2>Table of Contents</h2>
+    <nav>
+        <ul>
+            <li><a href="#Basics" class="ToCText">Basics, HTML Elements, Attributes</a></li>
+            <li><a href="#Heading" class="ToCText">Heading(s are important), Paragraphs, Comments</a></li>
+            <li><a href="#Links" class="ToCText">Links, Images, Head Elements</a></li>
+        </ul>
+    </nav>
+
+    <section id="Basics">
+        <p class="subheaders">Basics</p>
+        <p class="questions">HTML Document</p>
+        <p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;</p>
+        <p>The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.</p>
+        <p>The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.</p>
+
+        <p class="questions">The &lt;!DOCTYPE&gt; Declaration</p>
+        <p>The &lt;!DOCTYPE&gt; declaration represents the document type, and helps browsers to display web pages correctly.</p>
+        <p>It must only appear once, at the top of the page (before any HTML tags).</p>
+        <p>The &lt;!DOCTYPE&gt; declaration is not case sensitive.</p>
+
+        <p class="subheaders">HTML Elements</p>
+        <p >The HTML element is everything from the start tag to the end tag:</p>
+        <h4>&lt;tagname&gt; Content goes here...&lt;/tagname&gt</h4>
+
+        <p class="questions">Nested HTML Elements
+        <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+        <p>All HTML documents consist of nested HTML elements.</p>
+
+        <p class="questions">HTML Headings
+        <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+        <p>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading</p>
+
+        <p class="questions">HTML Paragraphs</p>
+        <p>HTML paragraphs are defined with the &lt;p&gt; tag</p>
+
+        <p class="questions">HTML Links
+        <p>HTML links are defined with the &lt;a&gt; tag</p>
+        <p>Write: href="test.html" to open a page</p>
+        <p>Attributes are used to provide additional information about HTML elements.</p>
+        <p>You will learn more about attributes in a later chapter.</p>
+
+        <p class="questions">Never Skip the End Tag</p>
+        <p>Some HTML elements will display correctly, even if you forget the end tag</p>
+        <p class="bold">However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
+
+        <p class="questions">Empty HTML Elements (void)</p>
+        <p>HTML elements with no content are called empty elements.</p>
+        <p>The &lt;br&gt; tag defines a line break, and is an empty element without a closing tag.</p>
+
+        <p class="questions">HTML is Not Case Sensitive</p>
+        <p>HTML tags are not case sensitive: &lt;P&gt; means the same as &lt;p&gt;.</p>
+        <p>The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document
+            types like XHTML.</p>
+
+        <p class="subheaders">Attributes</p>
+        <p>The 'title' attribute defines some extra information about an element.</p>
+        <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element</p>
+        <h4>Example:</h4>
+        <p>&lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;</p>
+
+        <p class="questions">Always Use Lowercase Attributes</p>
+        <p>The HTML standard does not require lowercase attribute names.</p>
+        <p>The title attribute (and all other attributes) can be written with uppercase or lowercase like title or TITLE.</p>
+        <p>However, W3C recommends lowercase attributes in HTML, and demands lowercase attributes for stricter document types like XHTML.</p>
+
+        <p class="questions">Single or Double Quotes?</p>
+        <p>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.</p>
+        <p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes</p>
+    </section>
+    <section id="Heading">
+        <p class="subheaders">Heading</p>
+        <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+        <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+        <p>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</p>
+
+        <p class="subheaders">Headings Are Important</p>
+        <p>Search engines use the headings to index the structure and content of your web pages.</p>
+        <p>Users often skim a page by its headings. It is important to use headings to show the document structure.</p>
+        <p>&lt;h1&gt; headings should be used for main headings, followed by &lt;h2&gt; headings, then the less important &lt;h3&gt;, and so on.</p>
+
+        <p class="questions">Bigger Headings</p>
+        <p>Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property.</p>
+
+        <p class="subheaders">Paragraphs</p>
+        <p>A paragraph always starts on a new line, and is usually a block of text.</p>
+        <p>The HTML <p> element defines a paragraph.</p>
+        <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+        <p class="questions">1. HTML Display</p>
+        <p>You cannot be sure how HTML will be displayed.</p>
+        <p>Large or small screens, and resized windows will create different results.</p>
+        <p>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</p>
+        <p>The browser will automatically remove any extra spaces and lines when the page is displayed</p>
+
+        <p class="questions">HTML Horizontal Rules</p>
+        <p>The &lt;hr&gt; tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+        <p>The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page:</p>
+        <p>The &lt;hr&gt; tag is an empty tag, which means that it has no end tag.</p>
+
+        <p class="questions">HTML Line Breaks</p>
+        <p>The HTML &lt;br&gt; element defines a line break.</p>
+        <p>Use &lt;br&gt; if you want a line break (a new line) without starting a new paragraph:</p>
+        <p>The &lt;br&gt; tag is an empty tag, which means that it has no end tag.</p>
+
+        <p class="subheaders">Comments</p>
+        <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+        <p>You can add comments to your HTML source by using the following syntax: &lt;!-- Write your comments here --&gt;</p>
+        <p>Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+
+        <p class="questions">Add Comments</p>
+        <p>With comments you can place notifications and reminders in your HTML code</p>
+
+        <p class="questions">Hide Content</p>
+        <p>Comments can be used to hide content.</p>
+        <p>This can be helpful if you hide content temporarily</p>
+        <p>You can also hide more than one line. Everything between the &lt;!-- and the --&gt; will be hidden from the display.</p>
+        <p>Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors.</p>
+    </section>
+    <section id="Links">
+        <p class="subheaders">Links</p>
+        <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+        <p>HTML links are hyperlinks.</p>
+        <p>You can click on a link and jump to another document.</p>
+        <p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+
+        <p class="questions">Syntax</p>
+        <p>The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax: &lt;a href="url"&gt;link text&lt;/a&gt;</p>
+        <p>The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.</p>
+        <p>The link text is the part that will be visible to the reader.</p>
+        <p>Clicking on the link text, will send the reader to the specified URL address.</p>
+        <p>By default, links will appear as follows in all browsers:</p>
+        <ul>
+            <li><p>An unvisited link is underlined and blue<</p></li>
+            <li><p>A visited link is underlined and purple</p></li>
+            <li><p>An active link is underlined and red</p></li>
+        </ul>
+
+        <p class="questions">The target Attribute</p>
+        <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+        <p>The 'target' attribute specifies where to open the linked document.</p>
+        <p>The 'target' attribute can have one of the following values:</p>
+        <ul>
+            <li><p>'_self' - Default. Opens the document in the same window/tab as it was clicked</p></li>
+            <li><p>'_blank' - Opens the document in a new window or tab</p></li>
+            <li><p>'_parent' - Opens the document in the parent frame</p></li>
+            <li><p>'_top' - Opens the document in the full body of the window</p></li>
+        </ul>
+
+        <p class="questions">3. Absolute URLs vs. Relative URLs</p>
+        <p>Both examples above are using an absolute URL (a full web address) in the href attribute.</p>
+        <p>A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part)</p>
+
+        <p class="questions">Link to an Email Address</p>
+        <p>Use 'mailto:' inside the 'href' attribute to create a link that opens the user's email program (to let them send a new email)</p>
+
+        <p class="questions">Button as a Link</p>
+        <p>To use an HTML button as a link, you have to add some JavaScript code.</p>
+        <p>JavaScript allows you to specify what happens at certain events, such as a click of a button</p>
+
+        <p class="questions">Link Titles</p>
+        <p>The 'title' attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+
+        <p class="subheaders">Images</p>
+        <p>Images can improve the design and the appearance of a web page.</p>
+
+        <p class="questions">Syntax</p>
+        <p>The HTML &lt;img&gt; tag is used to embed an image in a web page.</p>
+        <p>Images are not technically inserted into a web page; images are linked to web pages. The &lt;img&gt; tag creates a holding space for the referenced image.</p>
+        <p>The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.</p>
+        <p>The &lt;img&gt; tag has two required attributes:</p>
+        <ul>
+            <li><p>src - Specifies the path to the image</p></li>
+            <li><p>alt - Specifies an alternate text for the image</p></li>
+        </ul>
+
+        <p class="questions">The alt Attribute</p>
+        <p>The required 'alt' attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+        <p>he value of the alt attribute should describe the image.</p>
+        <p>If a browser cannot find an image, it will display the value of the alt attribute:</p>
+
+        <p class="questions">Images in Another Folder</p>
+        <p>If you have your images in a sub-folder, you must include the folder name in the src attribute: &lt;img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;</p>
+
+        <p class="questions">Images on Another Server/Website</p>
+        <p>Some web sites point to an image on another server.</p>
+        <p>To point to an image on another server, you must specify an absolute (full) URL in the 'src' attribute: &lt;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&gt;</p>
+
+        <p class="subheaders">Head Elements</p>
+        <p>The HTML &lt;head&gt; element is a container for the following elements: &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, and &lt;base&gt;.</p>
+
+        <p class="questions">The HTML &lt;head&gt; Element</p>
+        <p>The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.</p>
+        <p>HTML metadata is data about the HTML document. Metadata is not displayed.</p>
+        <p>Metadata typically define the document title, character set, styles, scripts, and other meta information.</p>
+
+        <p class="questions">The HTML &lt;title&gt; Element</p>
+        <p>The &lt;title&gt; element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</p>
+        <p>The &lt;title&gt; element is required in HTML documents!</p>
+        <p>The content of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.</p>
+        <p>The &lt;title&gt; element:</p>
+        <ul>
+            <li><p>defines a title in the browser toolbar</p></li>
+            <li><p>provides a title for the page when it is added to favorites</p></li>
+            <li><p>displays a title for the page in search engine-results</p></li>
+        </ul>
+
+        <p class="questions">The HTML &lt;meta&gt; Element
+        <p>The &lt;meta&gt; element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.</p>
+        <p>The metadata will not be displayed on the page, but is used by browsers (how to display content or reload page), by search engines (keywords), and other web services.</p>
+        <p class="write-bold">Examples:</p>
+        <p>Define the character set used:</p>
+        <p class="write-bold">&lt;meta charset="UTF-8"&gt;</p>
+        <p>Define keywords for search engines:</p>
+        <p class="write-bold">&lt;meta name="keywords" content="HTML, CSS"&gt;</p>
+        <p>Define a description of your web page:</p>
+        <p class="write-bold">&lt;meta name="description" content="Free Web tutorials"&gt;</p>
+        <p>Define the author of a page:</p>
+        <p class="write-bold">&lt;meta name="author" content="Jacob Mayrwöger"&gt;</p>
+        <p>Refresh document every 30 seconds:</p>
+        <p class="write-bold">&lt;meta http-equiv="refresh" content="30"&gt;</p>
+        <p>Setting the viewport to make your website look good on all devices:</p>
+        <p class="write-bold">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+    </section>
+</body>
+</html>
