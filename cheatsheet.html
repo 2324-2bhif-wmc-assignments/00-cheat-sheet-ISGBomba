@@ -15,32 +15,15 @@
     <h2>Table of Contents</h2>
     <nav>
         <ul>
-            <span class="ToCHeaders">World Wide Web General</span>
-            <li><a href="#WWWSuccessQuestion">What are the most essential technologies that made the World Wide Web such
-                    a
-                    success?</a></li>
-            <li><a href="#ResourceAddressQuestion">How are resources (html pages, images, etc) addressed in the web?</a>
-            </li>
-            <li><a href="#GeneralCompURLQuestion">What are the general components of a url?</a></li>
-            <span class="ToCHeaders">Web Server</span>
-            <li><a href="#WebserverQuestion">What is a web server?</a></li>
-            <li><a href="#WebserverDoQuestion">What does a web server?</a></li>
-            <li><a href="#ContentStoredQuestion">How can content be stored on a web server?</a></li>
-            <li><a href="#ContentDescribedQuestion">How is content in webpages described?</a></li>
-            <span class="ToCHeaders">Web Client</span>
-            <li><a href="#WebClientQuestion">What is a web client?</a></li>
-            <li><a href="#WebClientDoesQuestion">What does a web client?</a></li>
-            <li><a href="#WebClientAndBrowserDifferents">Web Client and Web Browser is the same</a></li>
-            <span class="ToCHeaders">Hello World</span>
-            <li><a href="#HTMLTagQuestion">What is the html head element?</a></li>
-            <li><a href="#DoctypeQuestion">What does &lt;!DOCTYPE` html&gt; mean?</a></li>
-            <li><a href="#TopMostElements">What are the two top most elements within the html element?</a></li>
-            <li><a href="#EmphasizeQuestion">How to emphasize a text and how is it displayed in the browser?</a></li>
-            <li><a href="#MarkQuestion">How to mark up important ext and how is it displayed in the browser?</a></li>
+            <li><a href="#WWWG">World Wide Web General</a></li>
+            <li><a href="#WebServer">Web Server</a></li>
+            <li><a href="#WebClient">Web Client</a></li>
+            <li><a href="#HelloWorld">Hello World</a></li>
+            <li><a href="#CSS">CSS</a></li>
         </ul>
     </nav>
-    <p class="subheaders">Word Wide Web General</p>
-    <section id="WWWSuccessQuestion" class="answers">
+    <p id="WWWG" class="subheaders">Word Wide Web General</p>
+    <section class="answers">
         <p class="questions">What are the most essential technologies that made the World Wide Web such a success?</p>
         <ul>
             <li>Hypertext Markup Language (HTML)</li>
@@ -55,7 +38,7 @@
             <li>Web Hosting and Domain Name Systems (DNS)</li>
         </ul>
     </section>
-    <section id="ResourceAddressQuestion" class="answers">
+    <section class="answers">
         <p class="questions">How are resources (html pages, images, etc) addressed in the web?</p>
         <ul>
             <li>Scheme: The scheme or protocol specifies how the resource should be accessed. Common
@@ -70,7 +53,7 @@
                 identifies a specific section or anchor within a web page.</li>
         </ul>
     </section>
-    <section id="GeneralCompURLQuestion" class="answers">
+    <section class="answers">
         <p class="questions">What are the general components of a url?</p>
         <ul>
             <li>Scheme (or Protocol): http(s), ftp, mailto, file, tel, data</li>
@@ -90,8 +73,8 @@
                 a specific section or anchor within a web page</li>
         </ul>
     </section>
-    <p class="subheaders">Web Server</p>
-    <section id="WebserverQuestion" class="answers">
+    <p id="WebServer" class="subheaders">Web Server</p>
+    <section class="answers">
         <p class="questions">What is a web server?</p>
         <ul>
             A web server is a software application or hardware device that serves as the foundation for the
@@ -108,7 +91,7 @@
             <li>Port and IP Address</li>
         </ul>
     </section>
-    <section id="WebserverDoQuestion" class="answers">
+    <section class="answers">
         <p class="questions">What does a web server?</p>
         A web server performs several critical functions to facilitate the delivery of web content
         and services to clients (typically web browsers) over the internet. <br />
@@ -138,7 +121,7 @@
                 DDoS attacks, injection attacks, and unauthorized access.</li>
         </ul>
     </section>
-    <section id="ContentStoredQuestion" class="answers">
+    <section class="answers">
         <p class="questions">How can content be stored on a web server?</p>
         <ul>
             Content is stored on a web server in the form of files and directories within the server's file system.
@@ -166,7 +149,7 @@
             <li>Content Security: Proper access control measures are essential to protect content on a web server.</li>
         </ul>
     </section>
-    <section id="ContentDescribedQuestion" class="answers">
+    <section class="answers">
         <p class="questions">How is content in webpages described?</p>
         <ul>
             Content in webpages is described using a combination of technologies and standards that define the
@@ -190,7 +173,7 @@
                 elements with encapsulated functionality and styling. </li>
         </ul>
     </section>
-    <p class="subheaders">Web Client</p>
+    <p  id="WebClient" class="subheaders">Web Client</p>
     <section id="WebClientQuestion" class="answers">
         <p class="questions">What is a web client?</p>
         <ul>
@@ -214,7 +197,7 @@
                 clicking on links, playing videos, and performing various actions on web applications. </li>
         </ul>
     </section>
-    <section id="WebClientDoesQuestion" class="answers">
+    <section class="answers">
         <p class="questions">What does a web client?</p>
         <ul>
             A web client, often referred to simply as a "client," is a software application or user agent
@@ -244,7 +227,7 @@
                 ensuring that web content is usable by individuals with disabilities.</li>
         </ul>
     </section>
-    <section id="WebClientAndBrowserDifferents" class="answers">
+    <section class="answers">
         <p class="questions">Web Client and Web Browser is the same</p>
         <ul>
             No, a web client and a web browser are not the same, although they are related
@@ -255,7 +238,7 @@
                 that can make HTTP requests and retrieve web resources from web servers.</li>
         </ul>
     </section>
-    <p class="subheaders">Hello World</p>
+    <p id="HelloWorld" class="subheaders">Hello World</p>
     <section id="HTMLTagQuestion" class="answers">
         <p class="questions">What is the html head element?</p>
         The HTML &lt;head&gt; element is a crucial part of an HTML document. It doesn't represent visible
@@ -264,13 +247,13 @@
         how the document is displayed or processed. The &lt;head&gt; element is typically placed
         within the &lt;html&gt; element, before the &lt;body&gt; element
     </section>
-    <section id="DoctypeQuestion" class="answers">
+    <section class="answers">
         <p class="questions">What does &lt;!DOCTYPE` html&gt; mean?</p>
         The &lt;!DOCTYPE html&gt; declaration is an important instruction at the beginning of an HTML
         document that specifies the version of HTML being used and helps the web browser understand
         how to interpret and render the content of the page. It is a required element in HTML documents.
     </section>
-    <section id="TopMostElements" class="answers">
+    <section class="answers">
         <p class="questions">What are the two top most elements within the html element?</p>
         <ul>
             <li> &lt;head&gt; Element: This element contains metadata about the document and other elements
@@ -279,7 +262,7 @@
                 images, links, forms, and other elements that users interact with.</li>
         </ul>
     </section>
-    <section id="EmphasizeQuestion">
+    <section class="answers">
         <p class="questions">How to emphasize a text and how is it displayed in the browser?</p>
         In HTML, you can emphasize or highlight text using the &lt;em&gt; element or the &lt;strong&gt; element,
         depending on the level of emphasis you want to apply. These elements are used to indicate
@@ -287,7 +270,7 @@
         the intended level of emphasis.<br />
         In the browser, this would typically be displayed as: "This is <em>emphasized</em> text."
     </section>
-    <section id="MarkQuestion" class="answers">
+    <section class="answers">
         <p class="question">How to mark up important ext and how is it displayed in the browser?</p>
         In HTML, you can mark up important text using the &lt;mark&gt; element. The &lt;mark&gt; element is used to
         highlight or "mark" a portion of text as important or relevant within the context of the content.
@@ -297,6 +280,464 @@
 
         "This is some <mark>important</mark> text."
     </section>
-</body>
+    <section id="CSS"><h1>CSS</h1></section>
+    <p class="subheaders">Syntax</p>
+    <p class="questions">CSS Selectors</p>
+    <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+    <p>We can divide CSS selectors into five categories:</p>
+    <ul>
+        <li><p>Simple selectors (select elements based on name, id, class)</p></li>
+        <li><p>Combinator selectors (select elements based on a specific relationship between them)</p></li>
+        <li><p>Pseudo-class selectors (select elements based on a certain state)</p></li>
+        <li><p>Pseudo-elements selectors (select and style a part of an element)</p></li>
+        <li><p>Attribute selectors (select elements based on an attribute or attribute value)</p></li>
+    </ul>
+    <p class="questions">2. element Selector</p>
+    <p>The element selector selects HTML elements based on the element name.</p>
+    <p class="questions">3. Grouping Selector</p>
+    <p>The grouping selector selects all the HTML elements with the same style definitions.</p>
+    <p>It will be better to group the selectors, to minimize the code.</p>
+    <p>To group selectors, separate each selector with a comma.</p>
+    <pre>
+        h1, h2, p {
+        text-align: center;
+        color: red;
+        }
+    </pre>
+    <p class="questions">4. Comments</p> 
+    <p>CSS comments are not displayed in the browser, but they can help document your source code.</p>
+    <p>Comments are used to explain the code, and may help when you edit the source code at a later date.</p>
+    <p>Comments are ignored by browsers.</p>
+    <p>A CSS comment is placed inside the css file, and starts with /* and ends with */</p>
+    <p>You can add comments wherever you want in the code and they can also span multiple ines.</p>
 
+    <p class="subheaders">Colors</p>
+    <p>Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.</p>
+    <p class="questions">Color Names</p>
+    <p>In CSS, a color can be specified by using a predefined color name:</p>
+    <ul>
+        <li><p>Tomato</p></li>
+        <li><p>Orange</p></li>
+        <li><p>DodgerBlue</p></li>
+        <li><p>MediumSeaGreen</p></li>
+        <li><p>SlateBlue</p></li>
+        <li><p>Violet</p></li>
+    </ul>
+    <p>CSS/HTML support 140 standard color names.</p>
+    <p class="questions">HEX Colors</p>
+    <p>A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal integers specify the components of the color.</p>
+    <h4>2.1 HEX Value</h4>
+    <p>In CSS, a color can be specified using a hexadecimal value in the form:</p>
+    <p class="bold">#rrggbb</p>
+    <p>Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).</p>
+    <p>For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).</p>
+    <p>To display black, set all values to 00, like this: #000000.</p>
+    <p>To display white, set all values to ff, like this: #ffffff.  </p>
+    <h4>2.2 3 Digit HEX Value</h4>
+    <p>Sometimes you will see a 3-digit hex code in the CSS source.</p>
+    <p>The 3-digit hex code is a shorthand for some 6-digit hex codes.</p>
+    <p>The 3-digit hex code has the following form:</p>
+    <p class="bold">#rgb</p>
+    <p>Where r, g, and b represent the red, green, and blue components with values between 0 and f.</p>
+    <p>The 3-digit hex code can only be used when both the values (RR, GG, and BB) are the same for each component. So, if we have #ff00cc, it can be written like this: #f0c.</p>
+    <p class="subheaders">Background</p>
+    <p>The CSS background properties are used to add background effects for elements.</p>
+    <p class="questions">background-color</p>
+    <p>The 'background-color' property specifies the background color of an element.</p>
+    <p>With CSS, a color is most often specified by:</p>
+    <ul>
+        <li><p>a valid color name - like "red"</p></li>
+        <li><p>a HEX value - like "#ff0000"</p></li>
+        <li><p>an RGB value - like "rgb(255,0,0)"</p></li>
+    </ul>
+    <p class="questions">background-image</p>
+    <p>The 'background-image' property specifies an image to use as the background of an element.</p>
+    <p>By default, the image is repeated so it covers the entire element.</p>
+    <p>The background image can also be set for specific elements, like the &lt;p&gt; element</p>
+    <p class="questions">Repeat Horizontally or Vertically</p>
+    <p>By default, the background-image property repeats an image both horizontally and vertically.</p>
+    <p>Some images should be repeated only horizontally or vertically, or they will look strange</p>
+    <p>If the image above is repeated only horizontally '(background-repeat: repeat-x;)', the background will look better</p>
+    <p class="questions">Fixed Position</p>
+    <p>Showing the background image only once is also specified by the 'background-repeat' property</p>
+
+    <p class="subheaders">Text</p>
+    <p>CSS has a lot of properties for formatting text.</p>
+
+    <p class="questions">Text Color</p>
+    <p>The 'color' property is used to set the color of the text. The color is specified by:</p>
+    <ul>
+        <li><p>a color name - like "red"</p></li>
+        <li><p>a HEX value - like "#ff0000"</p></li>
+        <li><p>an RGB value - like "rgb(255,0,0)"</p></li>
+    </ul>
+    <p>The default text color for a page is defined in the body selector.</p>
+
+    <p class="questions">Text Alignment</p>
+    <p>The 'text-align' property is used to set the horizontal alignment of a text.</p>
+    <p>A text can be left or right aligned, centered, or justified.</p>
+    <p>When the 'text-align' property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight (like in magazines and newspapers).</p>
+    <p>The 'text-align-last' property specifies how to align the last line of a text.</p>
+    <p>The 'direction and unicode-bidi properties can be used to change the text direction of an element</p>
+    <p>The 'vertical-align' property sets the vertical alignment of an element.</p>
+
+    <p class="questions">Text Decoration</p>
+    <p>The 'text-decoration-line' property is used to add a decoration line to text.</p>
+    <p>You can combine more than one value, like overline and underline to display lines both over and under a text.</p>
+    <p>The 'text-decoration-color' property is used to set the color of the decoration line.</p>
+    <p>The text-decoration-style property is used to set the style of the decoration line.</p>
+    <p>The text-decoration-thickness property is used to set the thickness of the decoration line.</p>
+    <p>All links in HTML are underlined by default. Sometimes you see that links are styled with no underline. The text-decoration: none; is used to remove the underline from links</p>
+
+    <p class="questions">Text Transformation</p>
+    <p>The 'text-transform' property is used to specify uppercase and lowercase letters in a text.</p>
+    <p>It can be used to turn everything into uppercase or lowercase letters, or capitalize the first letter of each word.</p>
+
+    <p class="subheaders">Fonts</p>
+    <p>Choosing the right font for your website is important!</p>
+
+    <p class="questions">Difference Between Serif and Sans-serif Fonts</p>
+    <p>On computer screens, sans-serif fonts are considered easier to read than serif fonts.</p>
+    <ul>
+        <li><p>serif: fine lines at the ends of each letter</p></li>
+        <li><p>sans-serif: Fonts without lines</p></li>
+    </ul>
+
+    <p class="questions">font-family</p>
+    <p>In CSS, we use the font-family property to specify the font of a text.</p>
+    <p>If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".</p>
+    <p>
+        The 'font-family' property should hold several font names as a "fallback" system, to ensure maximum
+        compatibility between browsers/operating systems. Start with the font you want, and end with a generic
+        family (to let the browser pick a similar font in the generic family, if no other fonts are available).
+        The font names should be separated with comma.
+    </p>
+
+    <p class="questions">Font Style </p>
+    <p>The font-style property is mostly used to specify italic text.</p>
+    <p>This property has three values:</p>
+    <ul>
+        <li><p>normal - The text is shown normally</p></li>
+        <li><p>italic - The text is shown in italics</p></li>
+        <li><p>oblique - The text is "leaning" (oblique is very similar to italic, but less supported)</p></li>
+    </ul>
+    <p>The 'font-weight' property specifies the weight of a font.</p>
+    <p>The 'font-variant' property specifies whether or not a text should be displayed in a small-caps font.</p>
+    <p>
+        In a small-caps font, all lowercase letters are converted to uppercase letters. However, the converted
+        uppercase letters appears in a smaller font size than the original uppercase letters in the text.
+    </p>
+
+    <p class="questions">Font Size</p>
+    <p>The 'font-size' property sets the size of the text.</p>
+    <p>
+        Being able to manage the text size is important in web design.
+        However, you should not use font size adjustments to make
+        paragraphs look like headings, or headings look like paragraphs.
+    </p>
+    <p>Always use the proper HTML tags, like &lt;h1&gt; - &lt;h6&gt; for headings and &lt;p&gt; for paragraphs.</p>
+    <p>The font-size value can be an absolute, or relative size.</p>
+    <p>Absolute size:</p>
+    <ul>
+        <li><p>Sets the text to a specified size.</p></li>
+        <li><p>Does not allow a user to change the text size in all browsers (bad for accessibility reasons)</p></li>
+        <li><p>Absolute size is useful when the physical size of the output is known</p></li>
+    </ul>
+    <p>Relative size:</p>
+    <ul>
+        <li><p>Sets the size relative to surrounding elements.</p></li>
+        <li><p>Allows a user to change the text size in browsers.</p></li>
+    </ul>
+    <p>If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).</p>
+    <p class="bold">Set Font Size With Pixels:</p>
+    <p>Setting the text size with pixels gives you full control over the text size.</p>
+    <p class="bold">Set Font Size With Em</p>
+    <p>To allow users to resize the text (in the browser menu), many developers use em instead of pixels.</p>
+    <p>1em is equal to the current font size. The default text size in browsers is 16px. So, the default size of 1em is 16px.</p>
+    <p>The size can be calculated from pixels to em using this formula: pixels/16=em</p>
+    <p>The text size can be set with a vw unit, which means the "viewport width".</p>
+    <p>That way the text size will follow the size of the browser window.</p>
+
+    <p class="questions">font-weight</p>
+    <p>the 'font-weight' property sets how thick or thin characters in text should be displayed.</p>
+
+    <p class="subheaders">Link</p>
+    <p>Links can be styled with any CSS property (e.g. 'color', 'font-family', 'background', etc.).</p>
+    <p>In addition, links can be styled differently depending on what state they are in.</p>
+    <p>The four links states are:</p>
+    <ul>
+        <li><p>'a:link' - a normal, unvisited link</p></li>
+        <li><p>'a:visited' - a link the user has visited</p></li>
+        <li><p>'a:hover' - a link when the user mouses over it</p></li>
+        <li><p>'a:active' - a link the moment it is clicked</p></li>
+    </ul>
+    <p>When setting the style for several link states, there are some order rules:</p>
+    <ul>
+        <li><p>a:hover MUST come after a:link and a:visited</p></li>
+        <li><p>a:active MUST come after a:hover</p></li>
+    </ul>
+
+    <p class="subheaders">Combinators</p>
+    <p>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</p>
+    <p>There are four different combinators in CSS:</p>
+    <ul>
+        <li><p>descendant selector (space)</p></li>
+        <li><p>child selector (>)</p></li>
+        <li><p>adjacent sibling selector (+)</p></li>
+        <li><p>general sibling selector (~)</p></li>
+    </ul>
+
+    <p class="questions">Descendant Selector</p>
+    <p>The descendant selector matches all elements that are descendants of a specified element.</p>
+
+    <p class="questions">Child Selector (>)</p>
+    <p>The child selector selects all elements that are the children of a specified element.</p>
+
+    <p class="questions">Adjacent Sibling Selector (+)</p>
+    <p>The adjacent sibling selector is used to select an element that is directly after another specific element.</p>
+    <p>Sibling elements must have the same parent element, and "adjacent" means "immediately following".</p>
+
+    <p class="questions">General Sibling Selector (~)</p>
+    <p>The general sibling selector selects all elements that are next siblings of a specified element.</p>
+
+    <p class="subheaders">Pseudo-Class</p>
+    <p>A pseudo-class is used to define a special state of an element.</p>
+    <p>For example, it can be used to:</p>
+    <ul>
+        <li><p>Style an element when a user mouses over it</p></li>
+        <li><p>Style visited and unvisited links differently</p></li>
+        <li><p>Style an element when it gets focus</p></li>
+    </ul>
+
+    <p class="questions">Syntax</p>
+    <pre>
+        selector:pseudo-class {
+            property: value;
+        }
+    </pre>
+
+    <p class="questions">Anchor Pseudo-classes</p>
+    <p>Links can be displayed in different ways.</p>
+    <p>
+        'a:hover' MUST come after 'a:link' and 'a:visited' in the CSS definition in order to be effective!
+        'a:active' MUST come after 'a:hover' in the CSS definition in order to be effective! Pseudo-class names are not case-sensitive.
+    </p>
+
+    <p class="questions">The :first-child Pseudo-class </p>
+    <p>The :first-child pseudo-class matches a specified element that is the first child of another element.</p>
+
+    <h1>HTML</h1>
+    <p class="subheaders">Basics</p>
+
+    <p class="questions">HTML Document</p>
+    <p>All HTML documents must start with a document type declaration: &lt;!DOCTYPE html&gt;</p>
+    <p>The HTML document itself begins with &lt;html&gt; and ends with &lt;/html&gt;.</p>
+    <p>The visible part of the HTML document is between &lt;body&gt; and &lt;/body&gt;.</p>
+
+    <p class="questions">The &lt;!DOCTYPE&gt; Declaration</p>
+    <p>The &lt;!DOCTYPE&gt; declaration represents the document type, and helps browsers to display web pages correctly.</p>
+    <p>It must only appear once, at the top of the page (before any HTML tags).</p>
+    <p>The &lt;!DOCTYPE&gt; declaration is not case sensitive.</p>
+
+    <p class="subheaders">HTML Elements</p>
+    <p >The HTML element is everything from the start tag to the end tag:</p>
+    <h4>&lt;tagname&gt; Content goes here...&lt;/tagname&gt</h4>
+
+    <p class="questions">Nested HTML Elements
+    <p>HTML elements can be nested (this means that elements can contain other elements).</p>
+    <p>All HTML documents consist of nested HTML elements.</p>
+
+    <p class="questions">HTML Headings
+    <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+    <p>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading</p>
+
+    <p class="questions">HTML Paragraphs</p>
+    <p>HTML paragraphs are defined with the &lt;p&gt; tag</p>
+
+    <p class="questions">HTML Links
+    <p>HTML links are defined with the &lt;a&gt; tag</p>
+    <p>Write: href="test.html" to open a page</p>
+    <p>Attributes are used to provide additional information about HTML elements.</p>
+    <p>You will learn more about attributes in a later chapter.</p>
+
+    <p class="questions">Never Skip the End Tag</p>
+    <p>Some HTML elements will display correctly, even if you forget the end tag</p>
+    <p class="bold">However, never rely on this! Unexpected results and errors may occur if you forget the end tag!</p>
+
+    <p class="questions">Empty HTML Elements (void)</p>
+    <p>HTML elements with no content are called empty elements.</p>
+    <p>The &lt;br&gt; tag defines a line break, and is an empty element without a closing tag.</p>
+
+    <p class="questions">HTML is Not Case Sensitive</p>
+    <p>HTML tags are not case sensitive: &lt;P&gt; means the same as &lt;p&gt;.</p>
+    <p>The HTML standard does not require lowercase tags, but W3C recommends lowercase in HTML, and demands lowercase for stricter document
+        types like XHTML.</p>
+
+    <p class="subheaders">Attributes</p>
+    <p>The 'title' attribute defines some extra information about an element.</p>
+    <p>The value of the title attribute will be displayed as a tooltip when you mouse over the element</p>
+    <h4>Example:</h4>
+    <p>&lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;</p>
+
+    <p class="questions">Always Use Lowercase Attributes</p>
+    <p>The HTML standard does not require lowercase attribute names.</p>
+    <p>The title attribute (and all other attributes) can be written with uppercase or lowercase like title or TITLE.</p>
+    <p>However, W3C recommends lowercase attributes in HTML, and demands lowercase attributes for stricter document types like XHTML.</p>
+
+    <p class="questions">Single or Double Quotes?</p>
+    <p>Double quotes around attribute values are the most common in HTML, but single quotes can also be used.</p>
+    <p>In some situations, when the attribute value itself contains double quotes, it is necessary to use single quotes</p>
+
+    <p class="subheaders">Heading</p>
+    <p>HTML headings are titles or subtitles that you want to display on a webpage.</p>
+    <p>HTML headings are defined with the &lt;h1&gt; to &lt;h6&gt; tags.</p>
+    <p>&lt;h1&gt; defines the most important heading. &lt;h6&gt; defines the least important heading.</p>
+
+    <p class="subheaders">Headings Are Important</p>
+    <p>Search engines use the headings to index the structure and content of your web pages.</p>
+    <p>Users often skim a page by its headings. It is important to use headings to show the document structure.</p>
+    <p>&lt;h1&gt; headings should be used for main headings, followed by &lt;h2&gt; headings, then the less important &lt;h3&gt;, and so on.</p>
+
+    <p class="questions">Bigger Headings</p>
+    <p>Each HTML heading has a default size. However, you can specify the size for any heading with the style attribute, using the CSS font-size property.</p>
+
+    <p class="subheaders">Paragraphs</p>
+    <p>A paragraph always starts on a new line, and is usually a block of text.</p>
+    <p>The HTML <p> element defines a paragraph.</p>
+    <p>A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+
+    <p class="questions">1. HTML Display</p>
+    <p>You cannot be sure how HTML will be displayed.</p>
+    <p>Large or small screens, and resized windows will create different results.</p>
+    <p>With HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</p>
+    <p>The browser will automatically remove any extra spaces and lines when the page is displayed</p>
+
+    <p class="questions">HTML Horizontal Rules</p>
+    <p>The &lt;hr&gt; tag defines a thematic break in an HTML page, and is most often displayed as a horizontal rule.</p>
+    <p>The &lt;hr&gt; element is used to separate content (or define a change) in an HTML page:</p>
+    <p>The &lt;hr&gt; tag is an empty tag, which means that it has no end tag.</p>
+
+    <p class="questions">HTML Line Breaks</p>
+    <p>The HTML &lt;br&gt; element defines a line break.</p>
+    <p>Use &lt;br&gt; if you want a line break (a new line) without starting a new paragraph:</p>
+    <p>The &lt;br&gt; tag is an empty tag, which means that it has no end tag.</p>
+
+    <p class="subheaders">Comments</p>
+    <p>HTML comments are not displayed in the browser, but they can help document your HTML source code.</p>
+    <p>You can add comments to your HTML source by using the following syntax: &lt;!-- Write your comments here --&gt;</p>
+    <p>Notice that there is an exclamation point (!) in the start tag, but not in the end tag.</p>
+
+    <p class="questions">Add Comments</p>
+    <p>With comments you can place notifications and reminders in your HTML code</p>
+
+    <p class="questions">Hide Content</p>
+    <p>Comments can be used to hide content.</p>
+    <p>This can be helpful if you hide content temporarily</p>
+    <p>You can also hide more than one line. Everything between the &lt;!-- and the --&gt; will be hidden from the display.</p>
+    <p>Comments are also great for debugging HTML, because you can comment out HTML lines of code, one at a time, to search for errors.</p>
+
+    <p class="subheaders">Links</p>
+    <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+    <p>HTML links are hyperlinks.</p>
+    <p>You can click on a link and jump to another document.</p>
+    <p>When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+
+    <p class="questions">Syntax</p>
+    <p>The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax: &lt;a href="url"&gt;link text&lt;/a&gt;</p>
+    <p>The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination.</p>
+    <p>The link text is the part that will be visible to the reader.</p>
+    <p>Clicking on the link text, will send the reader to the specified URL address.</p>
+    <p>By default, links will appear as follows in all browsers:</p>
+    <ul>
+        <li><p>An unvisited link is underlined and blue<</p></li>
+        <li><p>A visited link is underlined and purple</p></li>
+        <li><p>An active link is underlined and red</p></li>
+    </ul>
+
+    <p class="questions">The target Attribute</p>
+    <p>By default, the linked page will be displayed in the current browser window. To change this, you must specify another target for the link.</p>
+    <p>The 'target' attribute specifies where to open the linked document.</p>
+    <p>The 'target' attribute can have one of the following values:</p>
+    <ul>
+        <li><p>'_self' - Default. Opens the document in the same window/tab as it was clicked</p></li>
+        <li><p>'_blank' - Opens the document in a new window or tab</p></li>
+        <li><p>'_parent' - Opens the document in the parent frame</p></li>
+        <li><p>'_top' - Opens the document in the full body of the window</p></li>
+    </ul>
+
+    <p class="questions">3. Absolute URLs vs. Relative URLs</p>
+    <p>Both examples above are using an absolute URL (a full web address) in the href attribute.</p>
+    <p>A local link (a link to a page within the same website) is specified with a relative URL (without the "https://www" part)</p>
+
+    <p class="questions">Link to an Email Address</p>
+    <p>Use 'mailto:' inside the 'href' attribute to create a link that opens the user's email program (to let them send a new email)</p>
+
+    <p class="questions">Button as a Link</p>
+    <p>To use an HTML button as a link, you have to add some JavaScript code.</p>
+    <p>JavaScript allows you to specify what happens at certain events, such as a click of a button</p>
+
+    <p class="questions">Link Titles</p>
+    <p>The 'title' attribute specifies extra information about an element. The information is most often shown as a tooltip text when the mouse moves over the element.</p>
+
+    <p class="subheaders">Images</p>
+    <p>Images can improve the design and the appearance of a web page.</p>
+
+    <p class="questions">Syntax</p>
+    <p>The HTML &lt;img&gt; tag is used to embed an image in a web page.</p>
+    <p>Images are not technically inserted into a web page; images are linked to web pages. The &lt;img&gt; tag creates a holding space for the referenced image.</p>
+    <p>The &lt;img&gt; tag is empty, it contains attributes only, and does not have a closing tag.</p>
+    <p>The &lt;img&gt; tag has two required attributes:</p>
+    <ul>
+        <li><p>src - Specifies the path to the image</p></li>
+        <li><p>alt - Specifies an alternate text for the image</p></li>
+    </ul>
+
+    <p class="questions">The alt Attribute</p>
+    <p>The required 'alt' attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+    <p>he value of the alt attribute should describe the image.</p>
+    <p>If a browser cannot find an image, it will display the value of the alt attribute:</p>
+
+    <p class="questions">Images in Another Folder</p>
+    <p>If you have your images in a sub-folder, you must include the folder name in the src attribute: &lt;img src="/images/html5.gif" alt="HTML5 Icon" style="width:128px;height:128px;"&gt;</p>
+
+    <p class="questions">Images on Another Server/Website</p>
+    <p>Some web sites point to an image on another server.</p>
+    <p>To point to an image on another server, you must specify an absolute (full) URL in the 'src' attribute: &lt;img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com"&gt;</p>
+
+    <p class="subheaders">Head Elements</p>
+    <p>The HTML &lt;head&gt; element is a container for the following elements: &lt;title&gt;, &lt;style&gt;, &lt;meta&gt;, &lt;link&gt;, &lt;script&gt;, and &lt;base&gt;.</p>
+
+    <p class="questions">The HTML &lt;head&gt; Element</p>
+    <p>The &lt;head&gt; element is a container for metadata (data about data) and is placed between the &lt;html&gt; tag and the &lt;body&gt; tag.</p>
+    <p>HTML metadata is data about the HTML document. Metadata is not displayed.</p>
+    <p>Metadata typically define the document title, character set, styles, scripts, and other meta information.</p>
+
+    <p class="questions">The HTML &lt;title&gt; Element</p>
+    <p>The &lt;title&gt; element defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab.</p>
+    <p>The &lt;title&gt; element is required in HTML documents!</p>
+    <p>The content of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results.</p>
+    <p>The &lt;title&gt; element:</p>
+    <ul>
+        <li><p>defines a title in the browser toolbar</p></li>
+        <li><p>provides a title for the page when it is added to favorites</p></li>
+        <li><p>displays a title for the page in search engine-results</p></li>
+    </ul>
+
+    <p class="questions">The HTML &lt;meta&gt; Element
+    <p>The &lt;meta&gt; element is typically used to specify the character set, page description, keywords, author of the document, and viewport settings.</p>
+    <p>The metadata will not be displayed on the page, but is used by browsers (how to display content or reload page), by search engines (keywords), and other web services.</p>
+    <p class="write-bold">Examples:</p>
+    <p>Define the character set used:</p>
+    <p class="write-bold">&lt;meta charset="UTF-8"&gt;</p>
+    <p>Define keywords for search engines:</p>
+    <p class="write-bold">&lt;meta name="keywords" content="HTML, CSS"&gt;</p>
+    <p>Define a description of your web page:</p>
+    <p class="write-bold">&lt;meta name="description" content="Free Web tutorials"&gt;</p>
+    <p>Define the author of a page:</p>
+    <p class="write-bold">&lt;meta name="author" content="Jonas Moser"&gt;</p>
+    <p>Refresh document every 30 seconds:</p>
+    <p class="write-bold">&lt;meta http-equiv="refresh" content="30"&gt;</p>
+    <p>Setting the viewport to make your website look good on all devices:</p>
+    <p class="write-bold">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
+</body>
 </html>
