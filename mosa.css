@@ -164,7 +164,7 @@ body {
 }
 
 @keyframes move {
-    0%{transform: translate(0, 0);}
+    0%{transform: translate(-50%, 0);}
     100%{transform: translate(100%, 0);}
 
 }
@@ -177,3 +177,63 @@ body {
   margin: 0;
 }
 
+.santa {
+  width:20vw;
+  min-width:175px;
+  z-index: 600;
+  cursor: pointer;
+  -webkit-animation: FlyingSanta 38s infinite linear;
+  -moz-animation: FlyingSanta 38s infinite linear;
+  -ms-animation: FlyingSanta 38s infinite linear;
+  -o-animation: FlyingSanta 38s infinite linear;
+  animation: FlyingSanta 38s infinite linear;
+  bottom: 0%;
+  left: 0%;
+  position: absolute;
+}
+@keyframes FlyingSanta {
+  25% {
+    bottom: 80%;
+    left: 85%;
+    transform: rotateY(0deg);
+  }
+  26% {
+    transform: rotateY(180deg);
+  }
+  50% {
+    bottom: 60%;
+    left: 0%;
+    transform: rotateY(180deg);
+  }
+  51% {
+    transform: rotateY(0deg);
+  }
+  75% {
+    bottom: 40%;
+    left: 85%;
+    transform: rotateY(0deg);
+  }
+  76% {
+    bottom: 40%;
+    left: 85%;
+    transform: rotateY(180deg);
+  }
+  99% {
+    transform: rotateY(180deg);
+  }
+}
+
+.BoycottC {
+  width: 92rem;
+  height: 50rem;
+  position: absolute;
+  top: 30rem;
+}
+
+.ChristmasTree {
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  top: 11rem;
+  left: 75rem;
+}
